@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor Especial</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* Fondo rosa suave */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .envelope {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #ff80ab; /* Fondo rosa fuerte */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Letras en color blanco */
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .envelope:hover {
+            background-color: #ff5c87; /* Cambio de color al pasar el ratón */
+        }
+        .envelope:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid #ff80ab; /* Triángulo superior del sobre */
+        }
+        .envelope:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #ff80ab; /* Triángulo inferior del sobre */
+        }
+        .message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .message p {
+            font-size: 18px;
+            color: #ff69b4; /* Rosa intenso para el mensaje */
+        }
+        .envelope:hover .message {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope">
+        <div>Click me, baby</div>
+        <div class="message">
+            <p>Te amo, Feliz cumpleaños 19, princesa ❤️</p>
+        </div>
+    </div>
+</body>
+</html>
